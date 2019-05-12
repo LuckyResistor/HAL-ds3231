@@ -20,7 +20,7 @@
 #include "DS3231.hpp"
 
 
-#include "../hal/BCD.hpp"
+#include "../hal-common/BCD.hpp"
 
 
 namespace lr {
