@@ -20,11 +20,11 @@
 //
 
 
-#include "../hal-common/DateTime.hpp"
-#include "../hal-common/Flags.hpp"
-#include "../hal-common/StatusTools.hpp"
-#include "../hal-common/String.hpp"
-#include "../hal-common/WireMasterChipRegister.hpp"
+#include "hal-common/DateTime.hpp"
+#include "hal-common/Flags.hpp"
+#include "hal-common/StatusTools.hpp"
+#include "hal-common/String.hpp"
+#include "hal-common/WireMasterChipRegister.hpp"
 
 
 namespace lr {
