@@ -20,6 +20,7 @@
 //
 
 
+#include "hal-common/BitTools.hpp"
 #include "hal-common/DateTime.hpp"
 #include "hal-common/Flags.hpp"
 #include "hal-common/StatusTools.hpp"
@@ -218,25 +219,25 @@ public:
     /// All flags for the control register
     ///
     enum class ControlFlag : uint8_t {
-        A1IE = (1<<0),
-        A2IE = (1<<1),
-        INTCN = (1<<2),
-        RS1 = (1<<3),
-        RS2 = (1<<4),
-        CONV = (1<<5),
-        BBSQW = (1<<6),
-        EOSC = (1<<7)
+        A1IE = oneBit8(0),
+        A2IE = oneBit8(1),
+        INTCN = oneBit8(2),
+        RS1 = oneBit8(3),
+        RS2 = oneBit8(4),
+        CONV = oneBit8(5),
+        BBSQW = oneBit8(6),
+        EOSC = oneBit8(7)
     };
     LR_DECLARE_FLAGS(ControlFlag, ControlFlags);
 
     /// All flags for the status register
     ///
     enum class StatusFlag : uint8_t {
-        A1F = (1<<0),
-        A2F = (1<<1),
-        BSY = (1<<2),
-        EN32kHz = (1<<3),
-        OSF = (1<<7)
+        A1F = oneBit8(0),
+        A2F = oneBit8(1),
+        BSY = oneBit8(2),
+        EN32kHz = oneBit8(3),
+        OSF = oneBit8(7)
     };
     LR_DECLARE_FLAGS(StatusFlag, StatusFlags);
 
